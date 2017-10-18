@@ -6,20 +6,18 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="stylesheet" href="css/sm.min.css">
+        <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/sm-extend.min.css">
         <link href="css/marquee.css" rel="stylesheet">
-        <link href="./css/comm.css" rel="stylesheet">
+        <link href="css/common.css" rel="stylesheet">
         <meta name="Keywords" content="虎游娱乐城 PT电子 TTG电子 MG电子 GG捕鱼">
     </head>
 <body>
 <div class="page-group">
     <div class="page page-current">
         <header class="bar bar-nav">
-            <a class="button button-link button-nav pull-left logo" href="/"><img src="./image/logo.png" width="120" alt="oybbet 欧易博"></a>
-            <a class="button button-link button-nav pull-right" href="login.html" data-transition="slide-out" data-no-cache="true">
-                注册/登录
-                <span class="icon icon-right"></span>
+            <a class="button header-login button-nav pull-left logo" href="/"><img src="./image/logo.png" alt="虎游娱乐城"></a>
+            <a class="button header-login button-nav pull-right " href="login.html" >注册/登录<span class="icon icon-right"></span>
             </a>
             <h1 class="title"></h1>
         </header>
@@ -44,18 +42,12 @@
         <div class="content native-scroll">
             <div class="swiper-container swiper-container-horizontal swiper-container-fade" data-space-between="10" id="Banner">
                 <div class="swiper-wrapper" style="transition-duration: 0ms;">
-                    <div class="swiper-slide" style="width: 1280px; height: 210px; background: url(&quot;/images/b1.jpg?v2&quot;) center center no-repeat; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; opacity: 1;"></div>
-                    <div class="swiper-slide" style="width: 1280px; height: 210px; background: url(&quot;/images/b2.jpg?V3&quot;) center center no-repeat; transform: translate3d(-1280px, 0px, 0px); transition-duration: 0ms; opacity: 1;"></div>
-                    <div class="swiper-slide" style="width: 1280px; height: 210px; background: url(&quot;/images/b3.jpg?V4&quot;) center center no-repeat; transform: translate3d(-2560px, 0px, 0px); transition-duration: 0ms; opacity: 1;"></div>
-                    <div class="swiper-slide swiper-slide-prev" style="width: 1280px; height: 210px; background: url(&quot;/images/b4.jpg?V3&quot;) center center no-repeat; transform: translate3d(-3840px, 0px, 0px); transition-duration: 0ms; opacity: 1;"></div>
-                    <div class="swiper-slide swiper-slide-active" style="width: 1280px; height: 210px; background: url(&quot;/images/b5.jpg?V4&quot;) center center no-repeat; transform: translate3d(-5120px, 0px, 0px); transition-duration: 0ms; opacity: 1;"></div>
+                    <div class="swiper-slide" style="width: 1280px; height: 210px; background: url('/image/banner_01.jpg') center center no-repeat; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; opacity: 1;"></div>
+                    <div class="swiper-slide" style="width: 1280px; height: 210px; background: url('/image/banner_02.jpg') center center no-repeat; transform: translate3d(-1280px, 0px, 0px); transition-duration: 0ms; opacity: 1;"></div>
                 </div>
                 <div class="swiper-pagination swiper-pagination-clickable">
                     <span class="swiper-pagination-bullet"></span>
                     <span class="swiper-pagination-bullet"></span>
-                    <span class="swiper-pagination-bullet"></span>
-                    <span class="swiper-pagination-bullet"></span>
-                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
                 </div>
             </div>
             <div class="content-padded">
@@ -101,14 +93,13 @@
 <script type="text/javascript" src="./js/sm-extend.min.js" charset="utf-8"></script>
 <script src="./js/all.js"></script>
 <script type="text/javascript">
-    $("#Banner").swiper(
-        {
-            effect: 'fade',
-            autoplay: 3000,
-            autoplayDisableOnInteraction: false,
-            pagination: '.swiper-pagination',
-            paginationClickable: '.swiper-pagination'
-        });
+    $("#Banner").swiper({
+        effect: 'fade',
+        autoplay: 3000,
+        autoplayDisableOnInteraction: false,
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination'
+    });
 </script>
 </body>
 </html>

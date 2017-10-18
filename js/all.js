@@ -546,17 +546,7 @@ function SaveBk() {
         }
     });
 }
-/*pt*/
-function goto_pt_game(e,gamecode, mode) {
 
-    var lname = $(e).attr('lname');
-    var key = $(e).attr('key');
-    window.open('http://www.oyb777.com/slot/MToGameNew?gamecode=' + gamecode + '&mode=' + mode + "&loginname=" + lname + "&key=" + key);
-}
-function goto_mg_game(itemId,appId, mode) {
-
-    window.open('/slot/Mgtogame?item_id=' + itemId+"&app_id="+appId);
-}
 function check_valid() {
     var username = $("#username").val();
     if (!username || String(username).length < 5 || String(username).length > 11) {
