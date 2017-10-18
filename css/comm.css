@@ -1,0 +1,47 @@
+a.logo img{height:100%}
+.customtit{background:#fff;}
+.customtit h4{padding:.5em 1em;}
+.customrow p{border-bottom:1px solid #ddd;}
+.bountsrow p{padding-bottom:1em;}
+.gamepic a{display:block;width:100%;height:100%;}
+.gamepic a img{width:100%;}
+.gamepic .col-33{margin-bottom:5%;}
+table.list{width:100%}
+table.list th{background:#bfebf4;text-align:left;padding:1%;}
+table.list td{padding:1%;border-bottom:1px solid #ddd;}
+table.list tr.bg{background:#ddd;}
+
+
+.mg .col-33 a {
+    display: block;
+    text-align: center;
+   font-size: 12px;
+    width: 100px;
+    margin: auto;
+    overflow: hidden;
+}
+.mg .col-33 a img{    width: 200px;}
+.notice{padding:0px 0.5rem;line-height:30px;font-size:12px;}
+.bd{position:relative;height:30px;width:100%;}
+.bd .icon{float:left;width:76px;}
+ .bd .swiper-container   {
+       color: #5a5a5a;
+    font-size: 12px;
+    height: 30px;
+    position: absolute;
+    left: 76px;
+    right: 15px;
+    top: 0;
+    padding-bottom:0px;
+    overflow: hidden;
+}
+ .notice .icon i {
+    width: 15px;
+    height: 12px;
+    float: left;
+    margin-top: 7px;
+    margin-left: 5px;
+    background: url(/Images/notice@2x.png);
+    background-size: 100%;
+}
+ .notice .icon span{float:left;}
