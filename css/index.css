@@ -2,14 +2,14 @@
 .content {position: absolute;top: 0;right: 0;bottom: 0;left: 0; overflow: auto;-webkit-overflow-scrolling: touch}
 .page,.page-group{box-sizing:border-box;position:absolute;left:0;top:0;width:100%;height:100%;background:url(../image/backgroubd.png) repeat;}
 .page-group {display: block}
-.bar {position: absolute;right: 0;left: 0;z-index: 10;height: 2.35rem; padding-right: .5rem; padding-left: .5rem;background-color: #f7f7f8; backface-visibility: hidden}
+.bar {right: 0;left: 0;z-index: 10;height: 2.35rem; padding-right: .5rem; padding-left: .5rem;background-color: #f7f7f8; backface-visibility: hidden}
 .header-nav{background: url("../image/header_bg.png")  no-repeat;}
 a.logo img{height: 100%;width: auto;}
 a.header-login{top:0;padding:0;font-size:0.72rem;line-height:2.3rem;color:#0894ec;border:0;}
-.scroll-top{margin-top: 2.11rem}
+.scroll-top{margin-bottom: 2.6rem}
 .content-padded { margin: .5rem}
-.menu-content{background:url(../image/menu_bg.png) ;width: 100%;height: 86px; background-repeat:no-repeat; background-size:100% 100%;margin-top: -43.5px}
-.menu-btn{padding: 0.98rem;}
+.menu-content{background:url(../image/menu_bg.png) ;width: 100%;height: 6.4rem; background-repeat:no-repeat; background-size:100% 100%;margin-top:  -2.2rem}
+.menu-btn{padding: 0.78rem;margin-left: 5%;}
 .customtit{background:#fff;}
 .customtit h4{padding:.5em 1em;}
 .customrow p{border-bottom:1px solid #ddd;}
@@ -31,3 +31,9 @@ table.list tr.bg{background:#ddd;}
 .bd .swiper-container{color:#5a5a5a;font-size:12px;height:30px;position:absolute;left:76px;right:15px;top:0;padding-bottom:0;overflow:hidden}
 .notice .icon i{width:15px;height:12px;float:left;margin-top:7px;margin-left:5px;background:url(../image/notice.png);background-size:100%}
 .notice .icon span{float:left;}
+.page-fixed{position: fixed;}
+.footer-button{background: url("../image/footer_bg.png");width: 100%; background-repeat:no-repeat; background-size:100% 100%;margin-top: -43.5px}
+.footer-button a span{color: #f7f7f7;}
+.row .text-left{color: #f7f7f7;font-size: 0.8rem; margin-top: -2.6rem;margin-right: 0.6rem;text-align: -webkit-right;    margin-bottom: 1.1rem;}
+.row .text-right{color: #f7f7f7;font-size: 0.7rem; margin-top: -2.6rem; margin-right: 0.5rem;  text-align: -webkit-right;}
+.row .col-50-cs{ width: 46%;}
