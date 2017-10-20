@@ -37,3 +37,14 @@ table.list tr.bg{background:#ddd;}
 .row .text-left{color: #f7f7f7;font-size: 0.8rem; margin-top: -2.6rem;margin-right: 0.6rem;text-align: -webkit-right;    margin-bottom: 1.1rem;}
 .row .text-right{color: #f7f7f7;font-size: 0.7rem; margin-top: -2.6rem; margin-right: 0.5rem;  text-align: -webkit-right;}
 .row .col-50-cs{ width: 46%;}
+.jackpot-text{text-align: center;margin-top:0.3rem;letter-spacing:8px;font-weight:bold;font-size: 1.22rem;color:rebeccapurple;background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFE153), to(#9F5000)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+.jackpot-cash{text-align: center;margin-top:-0.4rem;}
+
+/**老虎机页面*/
+.button.btn-bandit{border-radius: 3.1px;color:#f7f7f8;background:-webkit-gradient(linear, left top, left bottom, from(#10807f), color-stop(0.1, #10807f), to(#10807f)); border: none;line-height: 2.1rem;font-size: .65rem; height: 2.1rem;}
+.menu-content-bandit{height: 6.4rem; background-repeat:no-repeat; background-size:100% 100%;margin-top:  -2.2rem;    margin-bottom: -1.5rem;}
+.row .col-4-bt{ width: 23.3%;margin-left: 0.2rem;margin-bottom: 0.15rem;}
+.menu-btn-bandit{margin-left: 5%;margin-top: 1rem;}
+.menu-bandit-left{padding-left: 0.85rem;}
+.targer-text{text-align: center}
+.targer-text span,.targer-text span{color: #f7f7f8;font-size: 0.76rem;  }
