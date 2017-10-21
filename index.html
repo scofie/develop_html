@@ -132,9 +132,9 @@
         var numRun2 = $(".numberRun2").numberAnimate({num:'3534324212', speed:2000, symbol:","});
         var nums2 = 3534324212;
         setInterval(function(){
-            nums2+= 143;
+            nums2+= Math.floor(Math.random()*100);
             numRun2.resetData(nums2);
-        },2000);
+        },1500);
 
 </script>
 </body>
