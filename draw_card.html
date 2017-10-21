@@ -18,35 +18,51 @@
         <a class="header-login pull-right " href="login.html" > 注册|登录 </a>
         <h1 class="title"></h1>
     </header>
+    <!--------未绑卡的页面----->
+    <!--<section class="user_list">-->
+        <!--<a href="card_detail.html" class="v4-management">还未绑定银行卡</a>-->
+    <!--</section>-->
     <section class="native-scroll scroll-top">
-        <form action="" method="post" id="login_form" >
-            <section class="form-input-group2 mt1">
-                <div class="form-input-box2">
-                    <span class="form-input-title">提款方式</span>
-                    <select>
-                        <option value="0">网银支付</option>
-                        <option value="1">支付转账</option>
-                        <option value="2">微信转账</option>
-                    </select>
+        <div class="row targer-text">
+            <div class="col-100">
+                <div class="table-responsive">
+                    <table class="table-bordered-rep">
+                        <thead>
+                        <tr>
+                            <th>银行名称</th>
+                            <th>卡号</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>建行</td>
+                            <td>622323****23223</td>
+                            <td>使用中</td>
+                            <td><a href="card_detail.html">查看</a> </td>
+                        </tr>
+                        <tr>
+                            <td>农行</td>
+                            <td>622323****23223</td>
+                            <td>使用中</td>
+                            <td><a href="card_detail.html">查看</a> </td>
+                        </tr>
+                        <tr>
+                            <td>招商</td>
+                            <td>622323****23223</td>
+                            <td>已禁用</td>
+                            <td><a href="card_detail.html">查看</a> </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </section>
-            <section class="form-input-group2">
-                <div class="form-input-box2 pwdTip">
-                    <span class="form-input-title ">账号信息</span>
-                    <input type="text" name="end_time"  autocomplete="off"  placeholder="微信，支付请备注姓名">
-                </div>
-            </section>
-            <section class="form-input-group2">
-                <div class="form-input-box2 pwdTip">
-                    <span class="form-input-title ">金额</span>
-                    <input type="text" name="end_time"  autocomplete="off"  placeholder="填写提款金额">
-                </div>
-            </section>
-            <section class="form-btn-wrap mb3px">
-                <input type="submit" class="form-btn form-btn-blue fl mb3px" id="submit-next" data-lock="false" value="提交">
-                <input type="reset" class="form-btn wap2-btn-red fr mb2px"   value="取消">
-            </section>
-        </form>
+            </div>
+        </div>
+        <section class="form-btn-wrap2 mb3px">
+            <a  class="form-btn2 fl" href="card_detail.html">新增银行卡</a>
+            <a  class="form-btn2 form-btn-red fr"  href="report.html" >返回</a>
+        </section>
     </section>
     <footer class="bar bar-tab page-fixed footer-button">
         <a class="tab-item " href="/">

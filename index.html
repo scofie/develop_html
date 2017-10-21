@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-50">
                     <p class="jackpot-text">累计奖池</p>
-                    <p class="jackpot-cash">12,122,222,222.12</p>
+                    <p class="jackpot-cash numberRun2">12,122,222,222.12</p>
                 </div>
 
             </div>
@@ -113,10 +113,12 @@
         </a>
     </footer>
 </div>
+
 <script src="./js/zepto.min.js"></script>
 <script type="text/javascript" src="./js/sm.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="./js/sm-extend.min.js" charset="utf-8"></script>
 <script src="./js/all.js"></script>
+<script src="./js/number.js"></script>
 <script type="text/javascript">
     $("#Banner").swiper({
         effect: 'fade',
@@ -125,6 +127,15 @@
         pagination: '.swiper-pagination',
         paginationClickable: '.swiper-pagination'
     });
+
+
+        var numRun2 = $(".numberRun2").numberAnimate({num:'3534324212', speed:2000, symbol:","});
+        var nums2 = 3534324212;
+        setInterval(function(){
+            nums2+= 143;
+            numRun2.resetData(nums2);
+        },2000);
+
 </script>
 </body>
 </html>

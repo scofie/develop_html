@@ -19,32 +19,60 @@
         <h1 class="title"></h1>
     </header>
     <section class="native-scroll scroll-top">
-        <form action="" method="post" id="login_form" >
+        <div class="row targer-text">
+            <div class="col-100">
+                <div class="table-responsive ">
+                    <table class="table-bordered-rep table-tran">
+                        <tbody>
+                        <tr>
+                            <td class="tfl">AG老虎机</td>
+                            <td class="tfr">0.00</td>
+                        </tr>
+                        <tr>
+                            <td class="tfl">MG老虎机</td>
+                            <td class="tfr">0.00</td>
+                        </tr>
+                        <tr>
+                            <td class="tfl">DT老虎机</td>
+                            <td class="tfr">123</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <form action="" method="post" id="login_form" class="mb3px" >
             <section class="form-input-group2 mt1">
                 <div class="form-input-box2">
-                    <span class="form-input-title">提款方式</span>
+                    <span class="form-input-title">转出</span>
                     <select>
-                        <option value="0">网银支付</option>
-                        <option value="1">支付转账</option>
-                        <option value="2">微信转账</option>
+                        <option value="0"> AG老虎机</option>
+                        <option value="1"> BBIN平台</option>
+                        <option value="2"> YSB平台</option>
+                        <option value="3"> SUN平台</option>
+                    </select>
+                </div>
+            </section>
+            <section class="form-input-group2 mt1">
+                <div class="form-input-box2">
+                    <span class="form-input-title">转入</span>
+                    <select>
+                        <option value="0"> AG老虎机</option>
+                        <option value="1"> BBIN平台</option>
+                        <option value="2"> YSB平台</option>
+                        <option value="3"> SUN平台</option>
                     </select>
                 </div>
             </section>
             <section class="form-input-group2">
                 <div class="form-input-box2 pwdTip">
-                    <span class="form-input-title ">账号信息</span>
-                    <input type="text" name="end_time"  autocomplete="off"  placeholder="微信，支付请备注姓名">
-                </div>
-            </section>
-            <section class="form-input-group2">
-                <div class="form-input-box2 pwdTip">
                     <span class="form-input-title ">金额</span>
-                    <input type="text" name="end_time"  autocomplete="off"  placeholder="填写提款金额">
+                    <input type="text" name="end_time"  autocomplete="off"  placeholder="填写真实姓名">
                 </div>
             </section>
-            <section class="form-btn-wrap mb3px">
-                <input type="submit" class="form-btn form-btn-blue fl mb3px" id="submit-next" data-lock="false" value="提交">
-                <input type="reset" class="form-btn wap2-btn-red fr mb2px"   value="取消">
+            <section class="form-btn-wrap2 mb3px">
+                <input type="submit" class="form-btn2 form-btn-blue fl" id="submit-next" data-lock="false" value="提交">
+                <input  class="form-btn2 wap2-btn-red fr"  type="reset" value="取消">
             </section>
         </form>
     </section>
