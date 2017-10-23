@@ -9,9 +9,20 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/hy-extend.css">
     <link href="css/common.css" rel="stylesheet">
+    <meta name="format-detection" content="telephone=yes">
     <meta name="Keywords" content="虎游娱乐城 PT电子 TTG电子 MG电子 GG捕鱼">
 </head>
 <body>
+<script>
+    //ready 函数
+    var readyRE = /complete|loaded|interactive/;
+    var ready = window.ready = function (callback) {
+        if (readyRE.test(document.readyState) && document.body) callback()
+        else document.addEventListener('DOMContentLoaded', function () {
+            callback()
+        }, false)
+    }
+</script>
 <div class=" page-group page-current content">
     <header class="bar header-nav">
         <a class="button header-login pull-left logo" href="/"><img src="./image/logo.png" alt="虎游娱乐城"></a>
@@ -71,29 +82,30 @@
         </div>
         <div class="content-padded gamepic">
             <div class="row">
-                <div class="col-50"><a href="slot.html"><img src="./image/game_03.png"><p class="text-left">MG老虎机</p></a></div>
-                <div class="col-50"><a href="slot.html"><img src="./image/game_04.png"><p class="text-right">QT老虎机</p></a></div>
+                <div class="col-50"><a href="slot.html"><img src="./image/game_05.png"><p class="text-left">MG老虎机</p></a></div>
+                <div class="col-50"><a href="slot.html"><img src="./image/game_06.png"><p class="text-right">QT老虎机</p></a></div>
             </div>
         </div>
         <div class="content-padded gamepic">
             <div class="row">
-                <div class="col-50"><a href="slot.html"><img src="./image/game_03.png"><p class="text-left">DT老虎机</p></a></div>
-                <div class="col-50"><a href="slot.html"><img src="./image/game_04.png"><p class="text-right">TTG老虎机</p></a></div>
+                <div class="col-50"><a href="slot.html"><img src="./image/game_07.png"><p class="text-left">DT老虎机</p></a></div>
+                <div class="col-50"><a href="slot.html"><img src="./image/game_08.png"><p class="text-right">TTG老虎机</p></a></div>
             </div>
         </div>
         <div class="content-padded gamepic">
             <div class="row">
-                <div class="col-50"><a href="slot.html"><img src="./image/game_03.png"><p class="text-left">RTG老虎机</p></a></div>
-                <div class="col-50"><a href="slot.html"><img src="./image/game_04.png"><p class="text-right">PNG老虎机</p></a></div>
+                <div class="col-50"><a href="slot.html"><img src="./image/game_09.png"><p class="text-left">RTG老虎机</p></a></div>
+                <div class="col-50"><a href="slot.html"><img src="./image/game_10.png"><p class="text-right">PNG老虎机</p></a></div>
             </div>
         </div>
         <div class="content-padded gamepic">
             <div class="row">
-                <div class="col-50"><a href="slot.html"><img src="./image/game_03.png"><p class="text-left">18体育</p></a></div>
-                <div class="col-50"><a href="slot.html"><img src="./image/game_04.png"><p class="text-right">ysb体育</p></a></div>
+                <div class="col-50"><a href="slot.html"><img src="./image/game_11.png"><p class="text-left">18体育</p></a></div>
+                <div class="col-50"><a href="slot.html"><img src="./image/game_12.png"><p class="text-right">ysb体育</p></a></div>
             </div>
         </div>
     </section>
+    <div class="mb8px"></div>
     <footer class="bar bar-tab page-fixed footer-button">
         <a class="tab-item " href="/">
             <span class="icon icon-home"></span>
@@ -113,13 +125,47 @@
         </a>
     </footer>
 </div>
-
+<div class="page-layer-error" style="display: none;">
+    <div class="page-mask"></div>
+    <div class="page-pop pop-error">
+        <span class="page-pop-close" data-toggle="mask" data-target="page-layer-error"></span>
+        <div class="page-pop-content">
+            <p><img src="./image/pop-error.png" class="pop-error-img" /></p>
+            <p>操作失败!</p>
+            <a href="javascript:;" data-toggle="mask" data-target="page-layer-error" class="page-pop-btn2">知道了</a>
+        </div>
+    </div>
+</div>
+<div class="page-layer-success" style="display: block;">
+    <div class="page-mask"></div>
+    <div class="page-pop">
+        <span class="page-pop-close" data-toggle="mask" data-target="page-layer-success"></span>
+        <div class="page-pop-content">
+            <p><img src="./image/pop-success.png" class="pop-error-img" /></p>
+            <p>操作成功!</p>
+            <a href="javascript:;" data-toggle="mask" data-target="page-layer-success" class="page-pop-btn">知道了</a>
+        </div>
+    </div>
+</div>
 <script src="./js/zepto.min.js"></script>
 <script type="text/javascript" src="./js/sm.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="./js/sm-extend.min.js" charset="utf-8"></script>
 <script src="./js/all.js"></script>
 <script src="./js/number.js"></script>
 <script type="text/javascript">
+
+    $(document).on('click', '#lottery-btn-login', function (event) {
+        event.stopPropagation();
+        $('.page-layer-login').show();
+        $('body,html').addClass('body-fix');
+    })
+    $(document).on('click', '[data-toggle="mask"]', function (event) {
+        event.stopPropagation();
+        var target = $(this).attr("data-target");
+        var $target = $("."+target);
+        $target.hide();
+        $('body,html').addClass('body-fix');
+    })
     $("#Banner").swiper({
         effect: 'fade',
         autoplay: 3000,
@@ -129,12 +175,12 @@
     });
 
 
-        var numRun2 = $(".numberRun2").numberAnimate({num:'3534324212', speed:2000, symbol:","});
-        var nums2 = 3534324212;
-        setInterval(function(){
-            nums2+= Math.floor(Math.random()*100);
-            numRun2.resetData(nums2);
-        },1500);
+    var numRun2 = $(".numberRun2").numberAnimate({num:'3534324212', speed:2000, symbol:","});
+    var nums2 = 3534324212;
+    setInterval(function(){
+        nums2+= Math.floor(Math.random()*100);
+        numRun2.resetData(nums2);
+    },1500);
 
 </script>
 </body>

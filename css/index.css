@@ -2,7 +2,7 @@
 .content {position: absolute;top: 0;right: 0;bottom: 0;left: 0; overflow: auto;-webkit-overflow-scrolling: touch}
 .page,.page-group{box-sizing:border-box;position:absolute;left:0;top:0;width:100%;height:100%;background:url(../image/backgroubd.png) repeat;}
 .page-group {display: block}
-.bar {right: 0;left: 0;z-index: 10;height: 2.35rem; padding-right: .5rem; padding-left: .5rem;background-color: #f7f7f8; backface-visibility: hidden}
+.bar {right: 0;left: 0;/*z-index: 10;*/height: 2.35rem; padding-right: .5rem; padding-left: .5rem;background-color: #f7f7f8; backface-visibility: hidden}
 .header-nav{background: url("../image/header_bg.png")  no-repeat;}
 a.logo img{height: 100%;width: auto;}
 a.header-login{top:0;padding:0;font-size:0.72rem;line-height:2.3rem;color:#0894ec;border:0;}
@@ -34,12 +34,12 @@ table.list tr.bg{background:#ddd;}
 .page-fixed{position: fixed;}
 .footer-button{background: url("../image/footer_bg.png");width: 100%; background-repeat:no-repeat; background-size:100% 100%;margin-top: -43.5px}
 .footer-button a span{color: #f7f7f7;}
-.row .text-left{color: #f7f7f7;font-size: 0.8rem; margin-top: -2.6rem;margin-right: 0.6rem;text-align: -webkit-right;    margin-bottom: 1.1rem;}
-.row .text-right{color: #f7f7f7;font-size: 0.7rem; margin-top: -2.6rem; margin-right: 0.5rem;  text-align: -webkit-right;}
+.row .text-left{color: #f7f7f7;font-size: 0.6rem; margin-top: -2.6rem;margin-right: 0.6rem;text-align: -webkit-right;    margin-bottom: 1.1rem;}
+.row .text-right{color: #f7f7f7;font-size: 0.6rem; margin-top: -2.6rem; margin-right: 0.5rem;  text-align: -webkit-right;}
 .row .col-50-cs{ width: 46%;}
 .jackpot-text{text-align: center;margin-top:0.3rem;letter-spacing:8px;font-weight:bold;font-size: 1.22rem;color:rebeccapurple;background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFE153), to(#9F5000)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
 .jackpot-cash{text-align: center;margin-top:-0.4rem;}
-
+/*footer{z-index: 10}*/
 /**老虎机页面*/
 .button.btn-bandit{border-radius: 3.1px;color:#f7f7f8;background:-webkit-gradient(linear, left top, left bottom, from(#10807f), color-stop(0.1, #10807f), to(#10807f)); border: none;line-height: 2.1rem;font-size: .65rem; height: 2.1rem;}
 .menu-content-bandit{height: 6.4rem; background-repeat:no-repeat; background-size:100% 100%;margin-top:  -2.2rem;    margin-bottom: -1.5rem;}
@@ -105,6 +105,79 @@ a.form-btn-red,input.wap2-btn-red{background-color:#f00b0d;border-color:#f00b0d}
 .mt-number-animate .mt-number-animate-dot{ width: 0.4rem;/*设置分割符宽度*/ line-height: 1rem; float: left; text-align: center;}
 .mt-number-animate .mt-number-animate-dom{ width: 0.7rem;/*设置单个数字宽度*/ text-align: center; float: left; position: relative; top: 0;}
 .mt-number-animate .mt-number-animate-dom .mt-number-animate-span{ width: 100%; float: left;}
+.body-fix{height:100%;position:relative;overflow:hidden}
+.page-mask{position:absolute;z-index:9;width:100%;height:100%;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,.8)}
+.page-pop{position:fixed;z-index:10;width:12.16rem;padding:1.387rem 0 1.109rem;left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);background:-moz-linear-gradient(top,#f43c3b,#FF8F59);background:-webkit-gradient(linear,0 50%,100% 50%,from(#f43c3b),to(#FF8F59));background:-webkit-linear-gradient(top,#f43c3b,#FF8F59);background:-o-linear-gradient(top,#f43c3b,#FF8F59);border-radius:.427rem;-webkit-border-radius:.427rem}
+.page-pop.pop-error{background:-moz-linear-gradient(top,#007979,#00E3E3);background:-webkit-gradient(linear,0 50%,100% 50%,from(#007979),to(#00E3E3));background:-webkit-linear-gradient(top,#007979,#00E3E3);background:-o-linear-gradient(top,#007979,#00E3E3)}
+.page-pop-close{position:absolute;z-index:3;width:.768rem;height:.747rem;top:.427rem;right:.427rem;background:url(../image/pop-close.png) 0 0 no-repeat;background-size:100%;font-size:0}
+.page-pop-content{background:1.792rem no-repeat;background-size:10.517rem 5.205rem}
+.pop-error p{line-height:1.387rem}
+.page-pop-content p{color:#fff;font-size:.853rem;text-align:center;line-height:1.237rem;text-shadow:0 0 2px rgba(0,0,0,.3)}
+.pop-error-img{width:2.987rem;height:2.987rem;margin-bottom:.427rem}
+.page-pop-btn{display:block;width:10.411rem;height:1.707rem;margin:1.707rem auto 0;line-height:1.707rem;background:#fff;text-align:center;color:#e03233;font-size:.64rem}
+.page-pop-btn2{display:block;width:10.411rem;height:1.707rem;margin:1.067rem auto 0;line-height:1.707rem;text-align:center;color:#f7f7f8;font-size:.853rem;background:-moz-linear-gradient(top,#D94600,#FF8F59);background:-webkit-gradient(linear,0 50%,100% 50%,from(#D94600),to(#FF8F59));background:-webkit-linear-gradient(top,#D94600,#FF8F59);background:-o-linear-gradient(top,#D94600,#FF8F59)}
+.page-group-box {
+    color: #000000;
+    margin: 10px auto 0px;
+    padding: 5px 10px;
+    font-size: 13px;
+    width: 96%;
+    padding-top: 20px;
+    clear: both;
+    text-align:center;
+    margin-top: -1.2rem;
+}
+.page-group-box a, .page-group-box a:link, .page-group-box a:visited {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DEDFDE;
+    color: #036CB4;
+    line-height: 25px;
+    padding: 8px 11px;
+    text-decoration: none;
+    margin-left: 4px;
+}
+a:link, a:visited {
+    font-style: normal;
+}
+.wap2-input-group2 {
+    width: 92%;
+    padding-left: 0.6rem;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: #007979;
+    margin-left: 6%;
+}
+.wap2-input-box {
+    line-height: 2.25rem;
+    height: 2.25rem;
+    overflow: hidden;
+    padding-left: 1.75rem;
+    position: relative;
+}
+.wap2-input-iconcode {
+    background-image: url(../image/timg-search.png);
+}
+.wap2-input-box input {
+    border: none;
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    font-size: 0.7rem;
+    height: 100%;
+}
+.wap2-input-box input.wap2-btn-code2, .wap2-btn-code2 {
+    position: absolute;
+    right: 0.001rem;
+    top: 0.0001rem;
+    width: 4.75rem;
+    height: 2.25rem;
+    line-height: 1.6rem;
+    background: #a09711;
+    text-align: center;
+    font-size: 0.68rem;
+    color: #d0d0d0;
+}
 
 
 
